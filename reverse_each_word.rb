@@ -1,7 +1,5 @@
-def reverse_each_word(greeting)
-  array = greeting.split(" ")
-  jin = array.collect do |w|
-    w.reverse 
-  end
-  jin.join(" ")
+def reverse_each_word(sentence)
+  first = sentence.split(" ")
+  second = first.collect {|words| words.reverse}
+  second.join(" ")
 end
